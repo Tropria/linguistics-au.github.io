@@ -1,0 +1,72 @@
+.keyboard {
+  display: inline-block; }
+
+.keyboard, .keyboard .line, .keyboard .line ul {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+.keyboard .line {
+  text-align: center;
+  margin-left: -14px; }
+
+.keyboard .line ul li {
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  margin: 10px 0 1px 14px;
+  color: #868e96;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  line-height: 48px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #ffffff;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear; }
+
+.keyboard .line ul li.uppercase {
+  text-transform: uppercase; }
+
+.keyboard .line ul li:hover, .keyboard .line ul li:active {
+  background-color: #f7f7f7; }
+
+.keyboard .line .return {
+  width: 120px; }
+
+.keyboard .line .space {
+  width: 456px; }
+
+.keyboard .line .numeric_switch {
+  width: 84px; }
+
+.keyboard .line .layout_switch {
+  background-color: url("/images/locale.png") no-repeat center right; }
+
+.keyboard .line .shift {
+  width: 100px;
+  background-color: url("/images/shift.png") no-repeat center center; }
+
+.keyboard .line .backspace {
+  width: 68px;
+  background-color: url("/images/backspace.png") no-repeat center center; }
+
+.ipa-keyinput {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #999;
+  font-size: 2.4rem;
+  width: 80%;
+  justify-self: center;
+  margin: 1rem auto;
+  border-radius: 0; }

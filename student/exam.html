@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Linguistics</title>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+  <a class="navbar-brand" href="#">
+    <img src="/images/alt.svg" alt="alt" class="d-inline-block align-top" height="30">
+  </a>
+
+  <div class="navbar-alt justify-content-between item-center">
+    <nav class="breadcrumb">
+    </nav>
+    <ul class="navbar-nav item-center">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            @username
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/account.html">Account Settings</a>
+                <a class="dropdown-item" href="#">logout</a>
+            </div>
+        </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="sidebar">
+    <a href="/student/"><i class="material-icons" data-toggle="tooltip" data-placement="right" title="Lessons">insert_drive_file</i></a>
+    <a href="/student/exams.html"><i class="material-icons" data-toggle="tooltip" data-placement="right" title="Exams">live_help</i></a>
+    <a href="/student/announcements.html" class="badge-holder"><i class="material-icons" data-toggle="tooltip" data-placement="right" title="Announcements">chat</i><span class="indicator">9</span></a>
+    <a href="/student/users.html"><i class="material-icons" data-toggle="tooltip" data-placement="right" title="Manage users">account_circle</i></a>
+</div>
+
+
+<div class="container">
+    <h3 class="text-dark text-center m-4">Question 23/50</h3>
+    <div class="test-audio-container">
+        <a class="text-secondary" href="#" data-role="play" data-target="#audio">
+            <i class="material-icons">volume_up</i>
+        </a>
+    </div>
+    <link href="/stylesheets/ipa_keyboard.css" rel="stylesheet" />
+<script src="/javascripts/ipa_keyboard.js"></script>
+<input class=" ipa-keyinput form-control" type="text" disabled id="ipa-keyboard-input"/>
+<div id="ipa-keyboard"></div>
+<script>
+    $(document).ready(function () {
+        $("#ipa-keyboard").keyboard({
+            input: $('#ipa-keyboard-input')
+        });
+    });
+</script>   
+    <div class="row m-5 ">
+        <button class="col-2 btn btn-light btn-lg">Previous</button>
+        <div class="space col-7"></div>
+        <button class="col-2 btn btn-primary btn-lg">Next</button>
+    </div>
+</div>
+
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+  </body>
+</html>

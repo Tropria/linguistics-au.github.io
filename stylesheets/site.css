@@ -1,0 +1,158 @@
+body, html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background: #eaeaea; }
+
+.align-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+.item-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.navbar-alt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%; }
+  .navbar-alt .breadcrumb {
+    background: transparent;
+    margin: 0; }
+    .navbar-alt .breadcrumb .breadcrumb-item {
+      color: #ffffff; }
+      .navbar-alt .breadcrumb .breadcrumb-item.active {
+        color: #999; }
+
+.btn-flex {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.card-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0.5rem 1.25rem; }
+
+.lesson-card {
+  width: 420px;
+  height: 240px; }
+  .lesson-card .card-text {
+    text-overflow: ellipsis; }
+
+.fab {
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  right: 2.5rem;
+  padding: 1rem;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  text-align: center;
+  background: #0275d8;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .fab i {
+    color: #ffffff;
+    font-size: 2rem; }
+
+.ml-sidebar {
+  margin-left: 6rem; }
+
+.sidebar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 64px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  height: 100%;
+  padding: 0;
+  margin-top: -8px; }
+  .sidebar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #868e96; }
+    .sidebar a:hover {
+      background: #e6e6e6;
+      color: #0275d8; }
+
+.badge-holder {
+  display: block;
+  position: relative; }
+  .badge-holder .indicator {
+    display: block;
+    background: #dc3545;
+    color: #ffffff;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 10px;
+    height: 20px;
+    padding: 4px;
+    min-width: 1.4rem;
+    margin: 0;
+    font-size: .7rem;
+    line-height: .7rem; }
+
+.inner-navbar .form-inline input[type="search"] {
+  min-width: 320px; }
+
+.announcement {
+  margin: .5rem;
+  padding: 10px; }
+  .announcement .card-body {
+    padding: .6rem; }
+  .announcement .card-title {
+    color: #0275d8;
+    font-size: 1.2rem;
+    margin: 0; }
+  .announcement .card-author {
+    color: #a1a8ae;
+    font-size: .8rem;
+    margin: .4rem 0; }
+  .announcement .card-text {
+    font-size: 1rem;
+    color: #6c757d; }
+  .announcement .card-date {
+    color: #868e96;
+    font-size: .8rem; }
+
+.profile {
+  width: 64px;
+  height: 64px;
+  background-size: contain;
+  border-radius: 50%;
+  border: 1px solid #999; }
+
+.note-editor.note-frame {
+  border: 1px solid rgba(0, 0, 0, 0.125) !important; }
+
+.test-audio-container {
+  display: block;
+  margin: 2rem auto;
+  text-align: center; }
+  .test-audio-container a i {
+    font-size: 128px; }
